@@ -53,6 +53,10 @@
       color: #bb86fc;
     }
 
+    a:hover {
+      color: #ffffff;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -79,6 +83,7 @@
 <main>
 
   <h2>1. Introduction</h2>
+
   <p>
     Avali Live Link ("the Bot", "we", "our") is a
     Discord application that provides automated Twitch
@@ -86,172 +91,306 @@
   </p>
 
   <p>
-    This Privacy Policy explains what information the
-    Bot processes, why it is needed, and how users
-    and server administrators can manage it.
+    This Privacy Policy explains what information
+    Avali Live Link collects, processes, stores,
+    and uses to provide its services.
+  </p>
+
+  <p>
+    By using Avali Live Link, you acknowledge
+    the data practices described in this policy.
   </p>
 
   <h2>2. Information We Collect</h2>
+
   <p>
-    To provide Twitch notifications, Avali Live Link
-    stores the following configuration information:
+    Avali Live Link stores limited information
+    necessary to operate its Twitch notification
+    features.
+  </p>
+
+  <p>
+    This information includes:
   </p>
 
   <ul>
     <li>Discord server IDs.</li>
     <li>Discord notification channel IDs.</li>
     <li>Twitch usernames configured by server administrators.</li>
-    <li>Custom notification messages.</li>
-    <li>Twitch stream IDs used to prevent duplicate alerts.</li>
+    <li>Custom livestream announcement messages.</li>
+    <li>Twitch stream IDs used for duplicate detection.</li>
     <li>Notification timestamps used for the 8-hour cooldown.</li>
   </ul>
 
   <p>
-    The Bot does not require users to provide passwords,
-    payment information, or personal Discord messages.
-    It is not designed to collect the contents of
-    ordinary Discord conversations.
+    The Bot may temporarily process Discord
+    interaction information, such as command
+    options and the identity of the user
+    issuing a command, to respond to requests
+    and check permissions.
   </p>
 
-  <h2>3. How Information Is Used</h2>
   <p>
-    Stored information is used to:
+    Avali Live Link does not require users
+    to provide passwords, payment information,
+    or personal Discord messages.
+  </p>
+
+  <p>
+    The Bot is not designed to collect
+    or monitor ordinary Discord conversations.
+  </p>
+
+  <h2>3. How We Use Information</h2>
+
+  <p>
+    Collected and stored information is used
+    exclusively to operate, maintain, and
+    improve the Bot's functionality.
   </p>
 
   <ul>
     <li>Monitor configured Twitch channels.</li>
-    <li>Send livestream notifications to selected Discord channels.</li>
-    <li>Customize announcement messages.</li>
-    <li>Prevent duplicate notifications.</li>
+    <li>Deliver livestream announcements to Discord.</li>
+    <li>Maintain server-specific notification settings.</li>
+    <li>Display custom announcement messages.</li>
+    <li>Prevent duplicate livestream notifications.</li>
     <li>Enforce an 8-hour notification cooldown.</li>
-    <li>Maintain server configurations between bot restarts.</li>
+    <li>Respond to administrative slash commands.</li>
+    <li>Diagnose technical issues and maintain service reliability.</li>
   </ul>
 
   <h2>4. Third-Party Services</h2>
+
   <p>
-    Avali Live Link interacts with Discord and Twitch
-    to provide its functionality.
+    Avali Live Link uses Discord and Twitch
+    to provide its notification services.
   </p>
 
   <p>
-    The Bot uses the Twitch API to retrieve publicly
-    available stream information, including livestream
-    status, stream titles or categories when available,
-    and streamer profile information.
+    The Twitch API is used to retrieve
+    publicly available livestream information,
+    including streamer usernames, livestream
+    status, game categories, stream previews,
+    and profile images.
   </p>
 
   <p>
-    Notifications are delivered through Discord.
-    Information processed by these services is also
-    subject to their respective privacy policies.
+    Discord is used to receive application
+    commands and deliver notifications
+    to configured server channels.
+  </p>
+
+  <p>
+    These third-party platforms operate
+    under their own privacy policies
+    and terms of service.
+  </p>
+
+  <p>
+    Discord Privacy Policy:
+    <a href="https://discord.com/privacy"
+       target="_blank" rel="noopener noreferrer">
+      https://discord.com/privacy
+    </a>
+  </p>
+
+  <p>
+    Twitch Privacy Notice:
+    <a href="https://www.twitch.tv/p/en/legal/privacy-notice/"
+       target="_blank" rel="noopener noreferrer">
+      Twitch Privacy Notice
+    </a>
   </p>
 
   <h2>5. Data Storage and Retention</h2>
+
   <p>
-    Bot configuration information is stored in a
-    local database operated by the Bot's administrator.
+    Avali Live Link stores configuration
+    information in a local database
+    maintained by the Bot operator.
   </p>
 
   <p>
-    Configuration data is retained while the relevant
-    Twitch notification configuration remains active,
-    unless it is removed by a server administrator
-    or through an authorized deletion request.
+    Configuration information is retained
+    while the relevant Twitch notification
+    configuration remains active or until
+    an authorized deletion request is processed.
   </p>
 
   <p>
-    The Bot does not use stored configuration
-    information for advertising or sell it
-    to third parties.
+    The Bot does not sell stored information
+    to advertisers or other third parties.
   </p>
 
-  <h2>6. Data Deletion</h2>
   <p>
-    Discord server administrators with the required
-    permissions can remove saved Twitch configurations
-    using the following commands:
+    Information is not used for targeted
+    advertising or commercial profiling.
+  </p>
+
+  <p>
+    Technical logs and database backups,
+    if maintained, may have separate
+    retention periods. Users may contact
+    the Bot operator for information
+    about applicable retention practices.
+  </p>
+
+  <h2>6. Data Deletion and User Rights</h2>
+
+  <p>
+    Discord server administrators with
+    the required permissions may remove
+    Twitch notification configurations
+    directly through the Bot.
   </p>
 
   <ul>
     <li>
       <strong>/twitch clear</strong> -
-      Removes a specific Twitch streamer configuration.
+      Removes one configured Twitch streamer
+      from the current Discord server.
     </li>
+
     <li>
       <strong>/twitch clearall</strong> -
-      Removes all Twitch streamer configurations
-      associated with the current Discord server.
+      Removes all Twitch notification
+      configurations associated with
+      the current Discord server.
     </li>
   </ul>
 
   <p>
-    Removing a configuration deletes its associated
-    saved settings, stream ID, and cooldown timestamp
+    These commands delete the relevant
+    configuration records, including
+    saved channel settings, custom messages,
+    stream IDs, and cooldown timestamps,
     from the active database.
   </p>
 
   <p>
-    For other privacy questions or deletion requests,
-    contact the Bot operator through the official
-    project repository:
+    Users and server administrators may
+    request access to, correction of,
+    or deletion of applicable stored
+    information by contacting:
   </p>
 
   <p>
-    <a href="https://github.com">
-      GitHub
+    <strong>
+      <a href="mailto:massgamingavali@outlook.com">
+        massgamingavali@outlook.com
+      </a>
+    </strong>
+  </p>
+
+  <p>
+    Please include "Avali Live Link Privacy Request"
+    in the email subject and describe your request.
+    Additional information may be requested
+    to verify authorization before changes
+    are made to server configurations.
+  </p>
+
+  <p>
+    Requests will be reviewed and handled
+    in accordance with applicable laws
+    and operational requirements.
+  </p>
+
+  <h2>7. Data Security</h2>
+
+  <p>
+    Reasonable technical and organizational
+    measures are used to help protect
+    stored configuration information
+    and application credentials.
+  </p>
+
+  <p>
+    Access to the Bot's database and
+    authentication credentials is
+    intended to be limited to
+    authorized operators.
+  </p>
+
+  <p>
+    However, no method of electronic
+    storage or internet communication
+    can be guaranteed completely secure.
+  </p>
+
+  <h2>8. Children's Privacy</h2>
+
+  <p>
+    Avali Live Link is intended for use
+    in accordance with the applicable
+    age requirements established by
+    Discord and Twitch.
+  </p>
+
+  <p>
+    The Bot is not designed to knowingly
+    collect personal information from
+    children in violation of applicable law.
+  </p>
+
+  <p>
+    If you believe information has been
+    collected improperly, please contact
+    the Bot operator for review.
+  </p>
+
+  <h2>9. Changes to This Privacy Policy</h2>
+
+  <p>
+    This Privacy Policy may be updated
+    to reflect changes in the Bot's
+    functionality, data practices,
+    security requirements, or
+    applicable laws.
+  </p>
+
+  <p>
+    Any updated policy will be published
+    on this page.
+  </p>
+
+  <p>
+    The effective date will be revised
+    when material changes are made.
+  </p>
+
+  <h2>10. Contact Information</h2>
+
+  <p>
+    For questions about this Privacy Policy,
+    personal information, data deletion,
+    or Avali Live Link's privacy practices,
+    please contact the Bot operator.
+  </p>
+
+  <p>
+    <strong>Application:</strong> Avali Live Link
+  </p>
+
+  <p>
+    <strong>Support Email:</strong>
+    <a href="mailto:massgamingavali@outlook.com">
+      massgamingavali@outlook.com
     </a>
   </p>
 
   <p>
-    Please note that this general GitHub link is
-    temporary and will be replaced with the project's
-    direct contact or support link.
-  </p>
-
-  <h2>7. Data Security</h2>
-  <p>
-    Reasonable measures are taken to protect
-    stored Bot configurations and API credentials.
-    However, no electronic storage or transmission
-    system can be guaranteed completely secure.
-  </p>
-
-  <h2>8. Children's Privacy</h2>
-  <p>
-    Avali Live Link is intended for use in accordance
-    with Discord's and Twitch's applicable age
-    requirements. The Bot is not designed to
-    knowingly collect personal information from children.
-  </p>
-
-  <h2>9. Changes to This Policy</h2>
-  <p>
-    This Privacy Policy may be updated to reflect
-    changes in Bot functionality, data practices,
-    or applicable requirements.
+    <strong>Official Website:</strong>
+    <a href="index.html">
+      Avali Live Link
+    </a>
   </p>
 
   <p>
-    Updates will be published on this page,
-    together with a revised effective date
-    when appropriate.
-  </p>
-
-  <h2>10. Contact</h2>
-  <p>
-    Questions about this Privacy Policy can be
-    directed to the Avali Live Link operator
-    through the project's official GitHub repository.
-  </p>
-
-  <p>
-    A direct support contact will be added
-    before this policy is used for public
-    verification or review.
-  </p>
-
-  <p>
-    <a href="index.html">← Return to Homepage</a>
+    <a href="index.html">
+      ← Return to Homepage
+    </a>
   </p>
 
 </main>
